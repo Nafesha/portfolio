@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(4.jpg) no-repeat center center/cover;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+   /* border: 1px solid white; */
+   align-items: center;
+   position: absolute;
+   top: 30%;
+   right: 10%;
+}
+
+.heading{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+/* About Section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    align-items: center;
+    background-color: rgba(73, 187, 111, 0.24);
+}
+
+#pic{
+    display: flex;
+}
+
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#intro{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#b{
+    width: 160px;
+    height: 40px;
+    background: rgba(92, 81, 240, 0.226);
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#b a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+#b:hover{
+    cursor: pointer;
+    background-color: rgba(85, 190, 231, 0.24);
+    color: whitesmoke;
+    box-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+    font-weight: bold;;
+}
+
+/* Educational Background Section */
+
+
+#edubcgrnd{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    align-items: center;
+    background-color: rgba(73, 187, 111, 0.24);
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, black, white);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px black;
+}
+
+/* Skill Section */
+
+
+#skill{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    align-items: center;
+    background-color: rgba(73, 187, 111, 0.24);
+}
+
+/* Contact Section */
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    align-items: center;
+    background-color: rgba(73, 187, 111, 0.24);
+   
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 20px 0px;
+    align-items: center;
+    background-color:rgba(59, 22, 146, 0.24);
+}
+
+.input{
+    width: 70%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+
+#msg{
+    width: 70%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    width: 50%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+ 
